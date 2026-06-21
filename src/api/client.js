@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 
-export const API_BASE_URL = 'https://v9fes04dwf.execute-api.eu-north-1.amazonaws.com/api';
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export async function fetchWithAuth(endpoint, options = {}) {
   const token = Cookies.get('jwt_token');

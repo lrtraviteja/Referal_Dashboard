@@ -1,6 +1,6 @@
 const email = 'admin@example.com';
 const password = 'admin123';
-const API_BASE_URL = 'https://v9fes04dwf.execute-api.eu-north-1.amazonaws.com/api';
+const API_BASE_URL = process.env.VITE_API_BASE_URL;
 
 async function runSmokeTest() {
   console.log('Starting optional live API smoke test...');
